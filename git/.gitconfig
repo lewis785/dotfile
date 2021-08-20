@@ -1,0 +1,9 @@
+[user]
+	email = 6698050+lewis785@users.noreply.github.com
+	name = Lewis McNeill
+[core]
+	pager = cat
+	editor = vim
+[alias]
+	f = "!git commit --fixup $(git log --oneline -20 --pretty='%h %s' | fzf --reverse --height 20% | awk '{print $1}')"
+	l = "!git log -20 --oneline"
