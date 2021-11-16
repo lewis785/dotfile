@@ -10,7 +10,6 @@ echo "===Installing programs==="
 
 brew install git
 brew install docker
-brew install nvm
 brew install awscli
 brew install fzf
 brew install pandoc
