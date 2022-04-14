@@ -26,3 +26,10 @@ then
     echo "Installing obsidian"
 	sh ./linux/install-obsidian.sh
 fi
+
+
+#Settings
+echo "===Updating settings==="
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
+gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
+gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
