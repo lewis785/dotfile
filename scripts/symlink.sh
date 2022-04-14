@@ -3,7 +3,7 @@
 
 dotfileDir=$(pwd | sed 's/\(dotfiles\).*/\1/g')
 
-function linkDotfile {
+linkDotfile() {
   dest="${HOME}/${2}"
   src="${dotfileDir}/${1}"
   dateStr=$(date +%Y-%m-%d-%H%M)
@@ -15,12 +15,12 @@ function linkDotfile {
   elif [ -f "${dest}" ]; then
     # Existing file
     echo "Backing up existing file: ${dest}"
-    mv ${dest}{,.${dateStr}}
+    mv ${dest} "${dest}-${dateStr}"
 
   elif [ -d "${dest}" ]; then
     # Existing dir
     echo "Backing up existing dir: ${dest}"
-    mv ${dest}{,.${dateStr}}
+    mv ${dest} "${dest}-${dateStr}"
   fi
 
   echo "Creating new symlink: ${dest}"
