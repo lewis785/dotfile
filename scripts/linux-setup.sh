@@ -33,3 +33,6 @@ echo "===Updating settings==="
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+
+echo "===Add Fonts==="
+sh ./linux/add-hack-font.sh
