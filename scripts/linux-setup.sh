@@ -6,7 +6,6 @@ echo "===Installing programs==="
 sudo apt install \
 	vim \
 	git \
-	docker \
 	awscli \
 	fzf \
 	pandoc\
@@ -20,7 +19,8 @@ sudo apt install firefox -y
 sudo snap install --classic code
 sudo snap install vlc
 sudo snap install spotify
-# snap install --dangerous obsidian_0.12.3_amd64
+sudo snap install docker
+
 if ! type obsidian > /dev/null
 then
     echo "Installing obsidian"
