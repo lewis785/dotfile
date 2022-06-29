@@ -43,5 +43,11 @@ if ! type zsh > /dev/null; then
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 	chsh -s $(which zsh)
 fi
+
+# Custom Install
+echo "===Custom Install==="
+if ! type volta > /dev/null; then
+    curl https://get.volta.sh | bash
+fi
 echo "===Add Fonts==="
 sh ./linux/add-hack-font.sh
