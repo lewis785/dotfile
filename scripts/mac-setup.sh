@@ -52,3 +52,6 @@ fi
 echo "===Setting up symlinks==="
 
 sh ./symlink.sh
+
+echo "===Add Fonts==="
+sh ./mac/add-hack-font.sh
