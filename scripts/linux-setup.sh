@@ -35,5 +35,13 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
 
+# Setup ZSH
+echo "===Setting up zsh==="
+if ! type zsh > /dev/null; then
+	sudo install zsh
+	sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
+	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+	chsh -s $(which zsh)
+fi
 echo "===Add Fonts==="
 sh ./linux/add-hack-font.sh
