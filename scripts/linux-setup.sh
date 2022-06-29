@@ -47,7 +47,7 @@ fi
 # Custom Install
 echo "===Custom Install==="
 if ! type volta > /dev/null; then
-    curl https://get.volta.sh | bash
+    curl https://get.volta.sh | bash --skip-setup
 fi
 
 # Setup symlinks

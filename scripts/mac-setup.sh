@@ -45,7 +45,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 Echo "===Custom Installs==="
 
 if ! type volta > /dev/null; then
-    curl https://get.volta.sh | bash
+    curl https://get.volta.sh | bash --skip-setup
 fi
 
 # Setup symlinks
