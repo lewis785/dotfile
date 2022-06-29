@@ -49,5 +49,10 @@ echo "===Custom Install==="
 if ! type volta > /dev/null; then
     curl https://get.volta.sh | bash
 fi
+
+# Setup symlinks
+echo "===Setting up symlinks==="
+sh ./symlink.sh
+
 echo "===Add Fonts==="
 sh ./linux/add-hack-font.sh
