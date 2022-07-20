@@ -27,6 +27,7 @@ brew install --cask visual-studio-code
 brew install --cask postman
 brew install --cask aws-vault
 brew install --cask alfred
+brew install --cask krisp
 
 # Setup VSCode
 Echo "===Setup VSCode==="
