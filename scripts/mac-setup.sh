@@ -29,6 +29,10 @@ brew install --cask aws-vault
 brew install --cask alfred
 brew install --cask krisp
 
+echo "===Installing Terraform==="
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
+
 # Setup VSCode
 Echo "===Setup VSCode==="
 
