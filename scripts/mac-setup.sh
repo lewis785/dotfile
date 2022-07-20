@@ -26,6 +26,7 @@ brew install --cask iterm2
 brew install --cask visual-studio-code
 brew install --cask postman
 brew install --cask aws-vault
+brew install --cask alfred
 
 # Setup VSCode
 Echo "===Setup VSCode==="
