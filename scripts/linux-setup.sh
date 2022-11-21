@@ -20,7 +20,7 @@ sudo snap install --classic code
 sudo snap install vlc
 sudo snap install spotify
 
-if ! type obsidian > /dev/null
+if ! command -v obsidian > /dev/null
 then
     echo "Installing obsidian"
 	sh ./linux/install-obsidian.sh
@@ -38,7 +38,8 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
 
 # Setup ZSH
 echo "===Setting up zsh==="
-if ! type zsh > /dev/null; then
+if ! command -v zsh &> /dev/null
+then
 	sudo apt install zsh
 	sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
@@ -47,7 +48,8 @@ fi
 
 # Custom Install
 echo "===Custom Install==="
-if ! type volta > /dev/null; then
+if ! command -v volta &> /dev/null
+then
     curl https://get.volta.sh | bash --skip-setup
 fi
 
