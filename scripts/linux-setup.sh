@@ -34,6 +34,7 @@ echo "===Updating settings==="
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
 
 # Setup ZSH
 echo "===Setting up zsh==="
