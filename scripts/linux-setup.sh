@@ -39,7 +39,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
 # Setup ZSH
 echo "===Setting up zsh==="
 if ! type zsh > /dev/null; then
-	sudo install zsh
+	sudo apt install zsh
 	sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 	chsh -s $(which zsh)
