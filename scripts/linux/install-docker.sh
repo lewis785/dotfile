@@ -10,6 +10,6 @@ sudo apt install docker.io
 sudo snap install docker
 
 # Setup docker user group
-sudo groupadd docker
+sudo getent group docker || sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
