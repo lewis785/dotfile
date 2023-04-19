@@ -9,6 +9,7 @@ brew upgrade
 echo "===Installing programs==="
 
 brew install git
+brew install gh
 brew install docker
 brew install awscli
 brew install fzf
