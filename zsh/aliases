@@ -8,6 +8,9 @@ bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode che
 alias dev="cd ~/dev"
 alias gitdir="cd ~/git"
 
+alias ls="exa"
+alias exa='exa -laFh --git'
+
 # volta
 if [ -d $HOME/.volta ]; then
     export VOLTA_HOME="$HOME/.volta"

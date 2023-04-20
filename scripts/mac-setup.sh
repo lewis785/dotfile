@@ -14,6 +14,7 @@ brew install docker
 brew install awscli
 brew install fzf
 brew install pandoc
+brew install exa
 
 # Install Applications
 echo "===Installing application==="

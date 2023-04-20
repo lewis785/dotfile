@@ -10,6 +10,7 @@ sudo apt install \
 	fzf \
 	pandoc\
 	curl\
+	exa\
 	-y
 
 #Install applications
