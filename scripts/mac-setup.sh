@@ -36,14 +36,6 @@ echo "\n===Installing Terraform===\n"
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 
-# Setup VSCode
-Echo "\n===Setup VSCode===\n"
-
-code --install-extension esbenp.prettier-vscode
-code --install-extension dsznajder.es7-react-js-snippets
-code --install-extension ms-vscode.vscode-typescript-next
-code --install-extension vscode-icons-team.vscode-icons
-
 echo "\n===Setting up zsh===\n"
 
 if [ -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k" ]; then
