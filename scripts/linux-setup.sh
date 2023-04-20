@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "\n===Setting up symlinks===\n"
+sh ./symlink.sh
+
 echo "\n===Installing programs===\n"
 
 sudo apt install \
@@ -50,9 +53,6 @@ if exists volta; then
 else
     curl https://get.volta.sh | bash --skip-setup
 fi
-
-echo "\n===Setting up symlinks===\n"
-sh ./symlink.sh
 
 echo "\n===Add Fonts===\n"
 sh ./linux/add-hack-font.sh

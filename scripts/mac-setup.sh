@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "\n===Setting up symlinks===\n"
+sh ./symlink.sh
+
 brew update
 
 # Upgrade already installed apps
@@ -57,10 +60,6 @@ if exists volta; then
 else
     curl https://get.volta.sh | bash --skip-setup
 fi
-
-echo "\n===Setting up symlinks===\n"
-
-sh ./symlink.sh
 
 echo "\n===Add Fonts===\n"
 
