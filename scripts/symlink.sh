@@ -27,6 +27,6 @@ linkDotfile() {
   ln -s ${src} ${dest}
 }
 
-linkDotfile git/.gitconfig .gitconfig
-linkDotfile zsh/.zshrc .zshrc
-linkDotfile zsh/.p10k.zsh .p10k.zsh
+linkDotfile git/gitconfig .gitconfig
+linkDotfile zsh/zshrc .zshrc
+linkDotfile zsh/p10k.zsh .p10k.zsh
