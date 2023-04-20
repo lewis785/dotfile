@@ -1,7 +1,6 @@
 #!/bin/bash
 
-#Install basics
-echo "===Installing programs==="
+echo "\n===Installing programs===\n"
 
 sudo apt install \
 	vim \
@@ -13,8 +12,7 @@ sudo apt install \
 	exa\
 	-y
 
-#Install applications
-echo "===Installing applications==="
+echo "\n===Installing applications===\n"
 
 sudo apt install firefox -y
 sudo snap install --classic code
@@ -27,19 +25,17 @@ then
 	sh ./linux/install-obsidian.sh
 fi
 
-echo "==Install Docker==="
+echo "\n===Install Docker===\n"
 sh ./linux/install-docker.sh
 
-#Settings
-echo "===Updating settings==="
+echo "\n===Updating settings===\n"
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
 gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
 gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
 
-# Setup ZSH
-echo "===Setting up zsh==="
+echo "\n===Setting up zsh===\n"
 if ! command -v zsh &> /dev/null
 then
 	sudo apt install zsh
@@ -48,17 +44,15 @@ then
 	chsh -s $(which zsh)
 fi
 
-# Custom Install
-echo "===Custom Install==="
+echo "\n===Custom Install===\n"
 if exists volta; then
     echo "Volta already installed"
 else
     curl https://get.volta.sh | bash --skip-setup
 fi
 
-# Setup symlinks
-echo "===Setting up symlinks==="
+echo "\n===Setting up symlinks===\n"
 sh ./symlink.sh
 
-echo "===Add Fonts==="
+echo "\n===Add Fonts===\n"
 sh ./linux/add-hack-font.sh
