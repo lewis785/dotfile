@@ -52,7 +52,9 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 # Custom Installs
 Echo "===Custom Installs==="
 
-if ! type volta > /dev/null; then
+if exists volta; then
+    echo "Volta already installed"
+else
     curl https://get.volta.sh | bash --skip-setup
 fi
 
