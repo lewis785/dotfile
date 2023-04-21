@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 echo "\n===Setting up symlinks===\n"
-zsh ../common/symlink.sh
+../common/symlink.sh
 
 echo "\n===Homebrew Install===\n"
 zsh ./install-brew.sh
@@ -16,11 +16,7 @@ else
 fi
 
 echo "\n===Custom Installs===\n"
-if exists volta; then
-    echo "Volta already installed"
-else
-    curl https://get.volta.sh | bash --skip-setup
-fi
+../common/install-volta.sh
 
 echo "\n===Add Fonts===\n"
-zsh ./add-hack-font.sh
+./add-hack-font.sh

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "\n===Setting up symlinks===\n"
-sh ../common/symlink.sh
+../common/symlink.sh
 
 echo "\n===Installing programs===\n"
 
@@ -29,7 +29,7 @@ then
 fi
 
 echo "\n===Install Docker===\n"
-sh ./install-docker.sh
+./install-docker.sh
 
 echo "\n===Updating settings===\n"
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
@@ -48,11 +48,7 @@ then
 fi
 
 echo "\n===Custom Install===\n"
-if exists volta; then
-    echo "Volta already installed"
-else
-    curl https://get.volta.sh | bash --skip-setup
-fi
+../common/install-volta.sh
 
 echo "\n===Add Fonts===\n"
-sh ./add-hack-font.sh
+./add-hack-font.sh
