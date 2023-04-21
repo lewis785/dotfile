@@ -22,7 +22,7 @@ linkDotfile() {
     mv ${dest} "${dest}-${dateStr}"
   fi
 
-  echo "Creating new symlink: ${dest}"
+  echo "Creating new symlink: ${src} --> ${dest}"
   ln -s ${src} ${dest}
 }
 
