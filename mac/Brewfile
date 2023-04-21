@@ -1,0 +1,44 @@
+tap "hashicorp/tap"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Modern replacement for 'ls'
+brew "exa"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
+# Terraform
+brew "hashicorp/tap/terraform"
+# Application launcher and productivity software
+cask "alfred"
+# Securely stores and accesses AWS credentials in a development environment
+cask "aws-vault"
+# Web browser
+cask "firefox"
+# Web browser
+cask "google-chrome"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Sound clear in online meetings
+cask "krisp"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Collaboration platform for API development
+cask "postman"
+# Team communication and collaboration software
+cask "slack"
+# Music streaming service
+cask "spotify"
+# Open-source code editor
+cask "visual-studio-code"

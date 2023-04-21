@@ -1,2 +1,4 @@
 # Ignore custom directories
 custom/
+
+Brewfile.lock.json
