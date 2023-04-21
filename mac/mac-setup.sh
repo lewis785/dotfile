@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/zsh
 
 echo "\n===Setting up symlinks===\n"
-sh ./symlink.sh
+sh ../common/symlink.sh
 
 brew update
 
@@ -55,4 +55,4 @@ fi
 
 echo "\n===Add Fonts===\n"
 
-sh ./mac/add-hack-font.sh
+sh ./add-hack-font.sh

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "\n===Setting up symlinks===\n"
-sh ./symlink.sh
+sh ../common/symlink.sh
 
 echo "\n===Installing programs===\n"
 
@@ -25,11 +25,11 @@ sudo snap install spotify
 if ! command -v obsidian > /dev/null
 then
     echo "Installing obsidian"
-	sh ./linux/install-obsidian.sh
+	sh ./install-obsidian.sh
 fi
 
 echo "\n===Install Docker===\n"
-sh ./linux/install-docker.sh
+sh ./install-docker.sh
 
 echo "\n===Updating settings===\n"
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
@@ -55,4 +55,4 @@ else
 fi
 
 echo "\n===Add Fonts===\n"
-sh ./linux/add-hack-font.sh
+sh ./add-hack-font.sh

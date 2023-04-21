@@ -1,7 +1,6 @@
 #!/bin/bash
 
-
-dotfileDir=$(pwd | sed 's/\(dotfiles\).*/\1/g')
+dotfileDir=$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )
 
 linkDotfile() {
   dest="${HOME}/${2}"
