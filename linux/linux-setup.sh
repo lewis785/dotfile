@@ -6,14 +6,14 @@ echo "\n===Setting up symlinks===\n"
 echo "\n===Installing programs===\n"
 
 sudo apt install \
-	vim \
-	git \
 	awscli \
-	fzf \
-	pandoc\
+	bat\
 	curl\
 	exa\
-	bat\
+	fzf \
+	git \
+	pandoc\
+	vim \
 	-y
 
 echo "\n===Installing applications===\n"
