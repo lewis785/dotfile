@@ -4,7 +4,7 @@ echo "\n===Setting up symlinks===\n"
 ../common/symlink.sh
 
 echo "\n===Homebrew Install===\n"
-zsh ./install-brew.sh
+./install-brew.sh
 brew bundle
 
 echo "\n===Setting up zsh===\n"
