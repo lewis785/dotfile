@@ -13,6 +13,7 @@ sudo apt install \
 	pandoc\
 	curl\
 	exa\
+	bat\
 	-y
 
 echo "\n===Installing applications===\n"
