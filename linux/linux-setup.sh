@@ -34,6 +34,8 @@ gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
 gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
 gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
+# Set blank screen timer to 30 minutes
+gsettings set org.gnome.desktop.session idle-delay 1800
 
 echo -e "\n===Setting up zsh===\n"
 if command -v zsh &> /dev/null; then
