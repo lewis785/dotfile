@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ls /user/sshare/fonts | grep -q Hack ; then
+if ls /usr/share/fonts | grep -q Hack ; then
     echo "Hack font already installed"
     exit 0
 fi
