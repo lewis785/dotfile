@@ -17,7 +17,7 @@ function install_package() {
 		echo "Already installed: $1"
 	else
 		echo ">>> Installing $1"
-		sudo apt install $1 -y
+		sudo apt-get install $1 -y >> /dev/null
 		echo ""
 	fi
 }
