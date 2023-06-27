@@ -8,12 +8,10 @@ echo -e "\n===Installing packages===\n"
 
 echo -e "\n===Installing applications===\n"
 
-sudo apt install firefox -y
 sudo snap install --classic code
 sudo snap install vlc
 sudo snap install spotify
 sudo snap install --classic obsidian
-
 
 
 echo -e "\n===Install Docker===\n"

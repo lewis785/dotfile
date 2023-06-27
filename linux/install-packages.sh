@@ -10,6 +10,7 @@ packages=(
 	pandoc
 	vim
 	zsh
+	firefox
 )
 
 function install_package() {
