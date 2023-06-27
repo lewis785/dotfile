@@ -15,11 +15,11 @@ packages=(
 
 function install_package() {
 	if dpkg --list | grep -w $1 -q; then
-		echo "Already installed: $1"
+		echo "Package $1 is already installed."
 	else
-		echo ">>> Installing $1"
+		echo "Installing package $1..."
 		sudo apt-get install $1 -y >> /dev/null
-		echo ""
+		echo "Package $1 installed successfully!"
 	fi
 }
 
