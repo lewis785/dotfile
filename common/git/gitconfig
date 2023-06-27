@@ -8,3 +8,5 @@
 	f = "!git commit --fixup $(git log --oneline -20 --pretty='%h %s' | fzf --reverse --height 20% | awk '{print $1}')"
 	l = "!git log -20 --oneline"
 	fix-commit-date = "!git filter-branch --env-filter 'export GIT_COMMITTER_DATE="$GIT_AUTHOR_DATE"'"
+[init]
+	defaultBranch = main
