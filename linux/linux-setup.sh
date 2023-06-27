@@ -12,7 +12,8 @@ sudo apt install firefox -y
 sudo snap install --classic code
 sudo snap install vlc
 sudo snap install spotify
-./install-obsidian.sh
+sudo snap install --classic obsidian
+
 
 
 echo -e "\n===Install Docker===\n"
