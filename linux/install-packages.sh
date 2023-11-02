@@ -7,6 +7,7 @@ packages=(
 	exa
 	fzf
 	git
+	hstr
 	pandoc
 	vim
 	zsh
