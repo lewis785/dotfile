@@ -8,6 +8,7 @@ packages=(
 	fzf
 	git
 	hstr
+	jq
 	pandoc
 	vim
 	zsh

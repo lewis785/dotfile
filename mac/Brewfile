@@ -18,6 +18,8 @@ brew "gh"
 brew "git"
 # Bash and zsh history suggest box
 brew "hstr"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Interpreted, interactive, object-oriented programming language
