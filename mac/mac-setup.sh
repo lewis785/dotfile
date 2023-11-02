@@ -8,12 +8,7 @@ echo "\n===Homebrew Install===\n"
 brew bundle
 
 echo "\n===Setting up zsh===\n"
-if [ -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k" ]; then
-    echo "Oh My Zsh already installed"
-else
-    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
-    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-fi
+../common/setup-zsh.sh
 
 echo "\n===Custom Installs===\n"
 ../common/install-volta.sh
