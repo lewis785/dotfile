@@ -10,3 +10,5 @@
 	fix-commit-date = "!git filter-branch --env-filter 'export GIT_COMMITTER_DATE="$GIT_AUTHOR_DATE"'"
 [init]
 	defaultBranch = main
+[push]
+	autoSetupRemote = true
