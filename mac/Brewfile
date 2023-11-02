@@ -1,13 +1,9 @@
 tap "hashicorp/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Pack, ship and run any application as a lightweight container
-brew "docker"
 # Modern replacement for 'ls'
 brew "exa"
 # Command-line fuzzy finder written in Go
@@ -28,15 +24,19 @@ brew "python@3.10"
 brew "hashicorp/tap/terraform"
 # Application launcher and productivity software
 cask "alfred"
+# Automatic tiling window manager similar to xmonad
+cask "amethyst"
 # Securely stores and accesses AWS credentials in a development environment
 cask "aws-vault"
 # Web browser
 cask "firefox"
 # Web browser
 cask "google-chrome"
+# App to build and share containerized applications and microservices
+cask "docker"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Sound clear in online meetings
+# Noise cancelling application
 cask "krisp"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
