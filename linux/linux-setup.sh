@@ -19,6 +19,9 @@ sudo snap install --classic obsidian
 echo -e "\n===Install Docker===\n"
 ./install-docker.sh
 
+echo -e "\n===Install Terraform===\n"
+./install-terraform.sh
+
 echo -e "\n===Updating settings===\n"
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
