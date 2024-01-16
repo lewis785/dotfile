@@ -10,6 +10,7 @@ packages=(
 	hstr
 	jq
 	pandoc
+	tmux
 	vim
 	zsh
 )

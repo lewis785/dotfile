@@ -20,8 +20,8 @@ brew "jq"
 brew "pandoc"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
-# Terraform
-brew "hashicorp/tap/terraform"
+# Terminal multiplexer
+brew "tmux"
 # Application launcher and productivity software
 cask "alfred"
 # Automatic tiling window manager similar to xmonad
