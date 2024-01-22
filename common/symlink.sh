@@ -30,3 +30,4 @@ linkDotfile git/gitconfig .gitconfig
 linkDotfile zsh/zshrc .zshrc
 linkDotfile zsh/zshenv .zshenv
 linkDotfile zsh/p10k.zsh .p10k.zsh
+linkDotfile tmux/tmux.conf .tmux.conf
