@@ -10,6 +10,7 @@ alias gitdir="cd ~/git"
 
 alias ls="exa"
 alias exa='exa -laFh'
+alias tf="terraform"
 
 # Ubuntu installs bat as batcat so an alias needs to be added
 if exists batcat; then
