@@ -22,6 +22,8 @@ brew "pandoc"
 brew "python@3.10"
 # Terminal multiplexer
 brew "tmux"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
 # Application launcher and productivity software
 cask "alfred"
 # Automatic tiling window manager similar to xmonad
