@@ -1,5 +1,6 @@
 tap "hashicorp/tap"
 tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -36,6 +37,8 @@ cask "firefox"
 cask "google-chrome"
 # App to build and share containerized applications and microservices
 cask "docker"
+# Developer targeted fonts with a high number of glyphs
+cask "font-hack-nerd-font"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Noise cancelling application
