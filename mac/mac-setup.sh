@@ -13,3 +13,6 @@ echo "\n===Setting up zsh===\n"
 echo "\n===Custom Installs===\n"
 ../common/install-volta.sh
 
+echo "\n===Mac Setting===\n"
+defaults write com.apple.dock autohide -bool true && killall Dock
+defaults write com.apple.dock tilesize -float 54 && killall Dock
