@@ -31,14 +31,16 @@ cask "alfred"
 cask "amethyst"
 # Securely stores and accesses AWS credentials in a development environment
 cask "aws-vault"
+# App to build and share containerised applications and microservices
+cask "docker"
 # Web browser
 cask "firefox"
-# Web browser
-cask "google-chrome"
-# App to build and share containerized applications and microservices
-cask "docker"
 # Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
+# Web browser
+cask "google-chrome"
+# HTTP and GraphQL Client
+cask "insomnia"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Noise cancelling application
