@@ -47,6 +47,8 @@ cask "iterm2"
 cask "krisp"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Open source build of Lens Kubernetes IDE
+cask "openlens"
 # Collaboration platform for API development
 cask "postman"
 # Move and resize windows using keyboard shortcuts or snap areas
