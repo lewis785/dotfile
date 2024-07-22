@@ -4,7 +4,7 @@ packages=(
 	awscli
 	bat
 	curl
-	exa
+	eza
 	fzf
 	git
 	hstr

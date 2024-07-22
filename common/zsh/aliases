@@ -8,8 +8,8 @@ bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode che
 alias dev="cd ~/dev"
 alias gitdir="cd ~/git"
 
-alias ls="exa"
-alias exa='exa -laFh'
+alias ls="eza"
+alias eza='eza -lahF'
 alias tf="terraform"
 
 # Ubuntu installs bat as batcat so an alias needs to be added
