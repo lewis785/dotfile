@@ -13,5 +13,3 @@ echo "\n===Setting up zsh===\n"
 echo "\n===Custom Installs===\n"
 ../common/install-volta.sh
 
-echo "\n===Add Fonts===\n"
-./add-hack-font.sh
