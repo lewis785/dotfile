@@ -5,6 +5,8 @@ tap "homebrew/cask-fonts"
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+brew "checkov"
+# CLI tool to nuke (delete) cloud resources
 # Modern, maintained replacement for ls
 brew "eza"
 # Command-line fuzzy finder written in Go
@@ -21,6 +23,14 @@ brew "jq"
 brew "pandoc"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
+# Tool to generate documentation from Terraform modules
+brew "terraform-docs"
+# Terraform version manager inspired by rbenv
+brew "tfenv"
+# Linter for Terraform files
+brew "tflint"
+# Static analysis security scanner for your terraform code
+brew "tfsec"
 # Terminal multiplexer
 brew "tmux"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
