@@ -23,6 +23,8 @@ brew "jq"
 brew "pandoc"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
+brew "rbenv"
+# Search tool like grep and The Silver Searcher
 # Tool to generate documentation from Terraform modules
 brew "terraform-docs"
 # Terraform version manager inspired by rbenv
