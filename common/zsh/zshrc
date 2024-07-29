@@ -70,3 +70,6 @@ homeDir=$(dirname $(readlink ~/.zshrc))
 
 # Import Functions
 [ -f "$homeDir/functions" ] && source "$homeDir/functions"
+
+# Added by `rbenv init` on Thu Jul 25 16:50:10 BST 2024
+eval "$(rbenv init - --no-rehash zsh)"
